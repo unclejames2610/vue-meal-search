@@ -1,5 +1,12 @@
 <template>
-  <h1 class="bg-red-400">Home</h1>
+  <div class="flex p-8 justify-center">
+    <input type="text" class="rounded border-2 border-gray-200 w-72" />
+  </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { computed } from "vue";
+import store from "../store";
+
+const meals = computed(() => store.state.meals);
+</script>
