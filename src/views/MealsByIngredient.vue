@@ -1,7 +1,5 @@
 <template>
-  <router-view />
+  <div>By Ingredient</div>
 </template>
 
 <script setup></script>
-
-<style scoped></style>
