@@ -1,6 +1,9 @@
 <template>
-  <div class="bg-white shadow rounded-xl">
-    <router-link :to="{ name: 'mealDetails', params: { id: meal.idMeal } }">
+  <div class="bg-white shadow rounded-xl cursor-pointer hover:scale-105">
+    <router-link
+      :to="{ name: 'mealDetails', params: { id: meal.idMeal } }"
+      class="cursor-pointer"
+    >
       <img
         :src="meal.strMealThumb"
         :alt="meal.strMeal"
